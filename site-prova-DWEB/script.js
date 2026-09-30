@@ -48,20 +48,11 @@
             `translateX(-${currentIndex * cardWidth}px)`;
 
 
-        /*
-         * Atualiza os botões
-         */
-
         prevButton.disabled =
             currentIndex === 0;
 
         nextButton.disabled =
             currentIndex >= getMaxIndex();
-
-
-        /*
-         * Atualiza os indicadores
-         */
 
         updateDots();
     }
@@ -193,18 +184,7 @@
         "submit",
         function (event) {
 
-            /*
-             * Impede o navegador de enviar
-             * o formulário para outra página.
-             */
-
             event.preventDefault();
-
-
-            /*
-             * Verifica se todos os campos
-             * obrigatórios estão preenchidos.
-             */
 
             if (!contatoForm.checkValidity()) {
 
@@ -214,36 +194,16 @@
             }
 
 
-            /*
-             * Pega o nome digitado pelo usuário.
-             */
-
             const nome =
                 document.getElementById("nome").value;
 
-
-            /*
-             * Mostra mensagem de sucesso.
-             */
 
             formStatus.textContent =
                 `Obrigado, ${nome}! Sua solicitação foi registrada com sucesso para esta demonstração.`;
 
             formStatus.classList.add("success");
 
-
-            /*
-             * Volta o formulário para o
-             * estado inicial.
-             */
-
             contatoForm.reset();
-
-
-            /*
-             * Faz a mensagem desaparecer
-             * depois de alguns segundos.
-             */
 
             setTimeout(
                 function () {
