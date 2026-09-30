@@ -262,65 +262,1646 @@ header {
     margin-bottom: 20px;
 }
 
-@media (max-width: 991px) {
-  .container-navbar {
-    padding: 10px;
-  }
+/* ÁREAS DE ATUAÇÃO */
 
-  .navbar {
-    padding: 15px 20px;
-  }
-
-  .navbar-brand-area {
-    gap: 5px;
-  }
-
-  .navbar-title {
-    font-size: 26px;
-  }
-
-  .navbar-subtitle {
-    font-size: 14px;
-  }
-
-  .navbar-nav {
-    padding-top: 15px;
-    gap: 5px;
-  }
-
-  .nav-item {
-    margin-bottom: 5px;
-  }
-
-  .hero-section h1 {
-    font-size: 50px;
-  }
-
-  .hero-section p {
-    font-size: 20px;
-  }
+.atuacao-section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #ffffff;
+    overflow: hidden;
 }
+
+
+/* Cabeçalho */
+
+.atuacao-header {
+    width: 1020px;
+    max-width: calc(100% - 40px);
+    margin: 0 auto 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.atuacao-label {
+    display: block;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+
+    color: goldenrod;
+
+    margin-bottom: 8px;
+}
+
+.atuacao-header h2 {
+    margin: 0;
+
+    font-family: 'Playfair Display',
+        'Bodoni Moda',
+        Georgia,
+        serif;
+
+    font-size: 50px;
+    font-weight: 400;
+
+    color: #0d0229;
+}
+
+.atuacao-header p {
+    width: 300px;
+
+    margin: 0;
+
+    font-family: Georgia,
+        'Times New Roman',
+        serif;
+
+    font-size: 13px;
+    line-height: 1.6;
+
+    color: #777;
+
+    text-align: right;
+}
+
+
+/* CARROSSEL */
+
+.atuacao-carrossel {
+    width: 1100px;
+    max-width: calc(100% - 30px);
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.atuacao-viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.atuacao-track {
+    display: flex;
+
+    gap: 20px;
+
+    transition: transform 0.5s ease;
+}
+
+
+/* CARDS*/
+
+.atuacao-card {
+    flex: 0 0 calc((100% - 60px) / 4);
+
+    min-width: 0;
+    height: 300px;
+
+    padding: 25px 20px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 15px rgba(13, 2, 41, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.atuacao-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(218, 165, 32, 0.5);
+
+    box-shadow:
+        0 12px 25px rgba(13, 2, 41, 0.14);
+}
+
+
+.atuacao-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 4px 12px rgba(13, 2, 41, 0.10);
+}
+
+.atuacao-icon svg {
+    width: 23px;
+    height: 23px;
+
+    fill: goldenrod;
+}
+
+
+.atuacao-card h3 {
+    margin: 0 0 12px;
+
+    font-family:
+        'Playfair Display',
+        'Bodoni Moda',
+        Georgia,
+        serif;
+
+    font-size: 17px;
+    line-height: 1.2;
+
+    color: #0d0229;
+}
+
+
+.atuacao-card p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+    line-height: 1.6;
+
+    color: #777;
+}
+
+.atuacao-card a {
+    margin-top: auto;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e5e5e5;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+    font-weight: bold;
+
+    color: #0d0229;
+
+    transition: color 0.2s ease;
+}
+
+.atuacao-card a span {
+    color: goldenrod;
+
+    margin-left: 4px;
+
+    transition: margin-left 0.2s ease;
+}
+
+.atuacao-card a:hover {
+    color: goldenrod;
+}
+
+.atuacao-card a:hover span {
+    margin-left: 8px;
+}
+
+.carrossel-btn {
+    flex-shrink: 0;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid #dedede;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #0d0229;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.carrossel-btn:hover {
+    background-color: #0d0229;
+
+    border-color: #0d0229;
+
+    color: goldenrod;
+}
+
+.carrossel-btn:disabled {
+    opacity: 0.3;
+
+    cursor: default;
+}
+
+.carrossel-dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 30px;
+}
+
+.carrossel-dot {
+    width: 7px;
+    height: 7px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #d5d5d5;
+
+    cursor: pointer;
+
+    transition:
+        width 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.carrossel-dot.active {
+    width: 22px;
+
+    border-radius: 10px;
+
+    background-color: goldenrod;
+}
+
+
+/* SEÇÃO DE CONTATO */
+
+.contato-section {
+    width: 100%;
+    padding: 110px 0;
+
+    background-color: #f8f9fa;
+}
+
+.contato-container {
+    width: 1020px;
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.contato-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: goldenrod;
+}
+
+
+.contato-info h2 {
+    max-width: 470px;
+
+    margin: 0;
+
+    font-family:
+        'Playfair Display',
+        'Bodoni Moda',
+        Georgia,
+        serif;
+
+    font-size: 48px;
+    font-weight: 400;
+
+    line-height: 1.08;
+
+    color: #0d0229;
+}
+
+
+.contato-descricao {
+    max-width: 450px;
+
+    margin-top: 25px;
+
+    font-family:
+        Georgia,
+        'Times New Roman',
+        serif;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #666;
+}
+
+.contato-detalhes {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
+    margin-top: 40px;
+}
+
+
+.contato-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.contato-item-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 4px 12px rgba(13, 2, 41, 0.08);
+}
+
+
+.contato-item-icon svg {
+    width: 19px;
+    height: 19px;
+
+    fill: goldenrod;
+}
+
+
+.contato-item span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    color: #999;
+}
+
+
+.contato-item p {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        'Times New Roman',
+        serif;
+
+    font-size: 14px;
+
+    color: #0d0229;
+}
+
+.contato-aviso {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 38px;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    background-color: rgba(218, 165, 32, 0.10);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    color: #6d5a20;
+}
+
+
+.contato-aviso span {
+    font-size: 10px;
+
+    color: goldenrod;
+}
+
+
+/* FORMULÁRIO */
+
+.contato-form-wrapper {
+    padding: 40px;
+
+    border-radius: 22px;
+
+    background-color: #ffffff;
+
+    box-shadow:
+        0 15px 45px rgba(13, 2, 41, 0.10);
+}
+
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+
+.form-header h3 {
+    margin: 0;
+
+    font-family:
+        'Playfair Display',
+        'Bodoni Moda',
+        Georgia,
+        serif;
+
+    font-size: 29px;
+
+    font-weight: 400;
+
+    color: #0d0229;
+}
+
+
+.form-header p {
+    margin: 8px 0 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.form-full {
+    grid-column: 1 / 3;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #0d0229;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 14px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 8px;
+
+    background-color: #ffffff;
+
+    outline: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    color: #252525;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: goldenrod;
+
+    box-shadow:
+        0 0 0 3px rgba(218, 165, 32, 0.10);
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 130px;
+}
+
+.form-check-custom {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-top: 22px;
+}
+
+
+.form-check-custom input {
+
+    width: 15px;
+    height: 15px;
+
+    flex-shrink: 0;
+
+    margin-top: 1px;
+
+    accent-color: goldenrod;
+
+    cursor: pointer;
+}
+
+
+.form-check-custom label {
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    line-height: 1.5;
+
+    color: #777;
+
+    cursor: pointer;
+}
+
+.contato-submit {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px 20px;
+
+    border: 1px solid #0d0229;
+
+    border-radius: 8px;
+
+    background-color: #0d0229;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.contato-submit span {
+
+    margin-left: 8px;
+
+    color: goldenrod;
+
+    transition:
+        margin-left 0.2s ease;
+}
+
+
+.contato-submit:hover {
+
+    background-color: goldenrod;
+
+    border-color: goldenrod;
+
+    transform: translateY(-2px);
+}
+
+
+.contato-submit:hover span {
+
+    margin-left: 13px;
+
+    color: #ffffff;
+}
+
+.form-status {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+.form-status.success {
+
+    display: block;
+
+    background-color: rgba(25, 135, 84, 0.10);
+
+    border: 1px solid rgba(25, 135, 84, 0.25);
+
+    color: #146c43;
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+
+    background-color: #0d0229;
+
+    color: white;
+}
+
+
+.footer-container {
+
+    width: 1020px;
+
+    max-width: calc(100% - 40px);
+
+    margin: 0 auto;
+
+    padding: 75px 0 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1.2fr;
+
+    gap: 50px;
+}
+
+.footer-brand h2 {
+
+    margin: 0;
+
+    font-family:
+        'Playfair Display',
+        'Bodoni Moda',
+        Georgia,
+        serif;
+
+    font-size: 38px;
+
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+
+.footer-subtitle {
+
+    margin: 2px 0 22px;
+
+    font-family:
+        Georgia,
+        'Times New Roman',
+        serif;
+
+    font-size: 13px;
+
+    color: goldenrod;
+}
+
+
+.footer-descricao {
+
+    max-width: 280px;
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.footer-column {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.footer-column h3 {
+
+    margin: 5px 0 22px;
+
+    font-family:
+        'Playfair Display',
+        'Bodoni Moda',
+        Georgia,
+        serif;
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    color: #ffffff;
+}
+
+
+.footer-column a {
+
+    margin-bottom: 12px;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    color: rgba(255, 255, 255, 0.60);
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.footer-column a:hover {
+
+    color: goldenrod;
+
+    transform: translateX(4px);
+}
+
+.footer-column p {
+
+    margin: 0 0 12px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.footer-socials {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+
+.footer-socials a {
+
+    width: 32px;
+    height: 32px;
+
+    padding: 0;
+
+    margin: 0;
+
+    border: 1px solid rgba(218, 165, 32, 0.5);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 9px;
+
+    font-weight: bold;
+
+    color: goldenrod;
+}
+
+
+.footer-socials a:hover {
+
+    background-color: goldenrod;
+
+    border-color: goldenrod;
+
+    color: #0d0229;
+
+    transform: translateY(-2px);
+}
+
+.footer-bottom {
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.10);
+}
+
+
+.footer-bottom-container {
+
+    width: 1020px;
+
+    max-width: calc(100% - 40px);
+
+    min-height: 75px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 9px;
+
+    color: rgba(255, 255, 255, 0.40);
+}
+
+
+.footer-bottom p:last-of-type {
+
+    color: rgba(218, 165, 32, 0.65);
+
+    text-align: center;
+}
+
+.voltar-topo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 13px;
+
+    border: 1px solid
+        rgba(218, 165, 32, 0.45);
+
+    border-radius: 20px;
+
+    background: transparent;
+
+    color: goldenrod;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.voltar-topo span {
+
+    font-size: 14px;
+
+    line-height: 1;
+}
+
+
+.voltar-topo:hover {
+
+    background-color: goldenrod;
+
+    border-color: goldenrod;
+
+    color: #0d0229;
+}
+
+/* RESPONSIVIDADEE */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* TABLETS */
+
+@media (max-width: 991px) {
+
+    /* MENU */
+
+    .container-navbar {
+        padding: 10px;
+    }
+
+    .navbar {
+        padding: 12px 18px;
+        border-radius: 25px;
+    }
+
+    .navbar-title {
+        font-size: 28px;
+    }
+
+    .navbar-subtitle {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .navbar-collapse {
+        margin-top: 15px;
+    }
+
+    .navbar-nav {
+        padding-top: 10px;
+        gap: 5px;
+    }
+
+    .nav-item {
+        margin-bottom: 5px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+
+    /* HERO */
+
+    .hero-section {
+        min-height: 100svh;
+        height: auto;
+        padding: 120px 20px 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 52px;
+    }
+
+    .hero-section p {
+        font-size: 20px;
+    }
+
+
+    /* MINI CARDS */
+
+    .expo-mini-cards {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        gap: 15px;
+    }
+
+    .mini-cards {
+        width: calc(50% - 8px);
+    }
+
+
+    /* O ESCRITÓRIO */
+
+    .sobre-text-title {
+        font-size: 42px;
+        margin-top: 90px;
+        padding: 0 20px;
+    }
+
+    .sobre-text {
+        font-size: 15px;
+        max-width: 650px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .grid-o-escritorio {
+        width: calc(100% - 40px);
+        margin: 40px auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .grid-item {
+        grid-column: 1 / 3;
+        grid-row: auto;
+
+        width: 100%;
+        height: 420px;
+    }
+
+    .grid-item-Filosofia {
+        grid-column: 1 / 3;
+        grid-row: auto;
+
+        width: 100%;
+        height: 240px;
+    }
+
+    .grid-item-outros {
+        width: 100%;
+        height: 220px;
+    }
+
+    .grid-item-outros:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .grid-item-outros:nth-of-type(4) {
+        grid-column: 2;
+        grid-row: auto;
+    }
+
+
+    /* ÁREAS DE ATUAÇÃO */
+
+    .atuacao-section {
+        padding: 80px 0;
+    }
+
+    .atuacao-header {
+        width: calc(100% - 40px);
+        max-width: none;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .atuacao-header h2 {
+        font-size: 42px;
+    }
+
+    .atuacao-header p {
+        width: 100%;
+        max-width: 450px;
+        text-align: left;
+    }
+
+    .atuacao-carrossel {
+        width: calc(100% - 30px);
+        max-width: none;
+        gap: 10px;
+    }
+
+    .atuacao-card {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+
+
+    /* CONTATO */
+
+    .contato-section {
+        padding: 80px 0;
+    }
+
+    .contato-container {
+        width: calc(100% - 40px);
+        max-width: none;
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .contato-info h2 {
+        max-width: 650px;
+        font-size: 42px;
+    }
+
+    .contato-descricao {
+        max-width: 650px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        width: calc(100% - 40px);
+        max-width: none;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / 3;
+    }
+
+    .footer-description,
+    .footer-descricao {
+        max-width: 450px;
+    }
+
+    .footer-bottom-container {
+        width: calc(100% - 40px);
+        max-width: none;
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+        padding: 20px 0;
+
+        text-align: center;
+    }
+}
+
+
+/* Celular */
 
 @media (max-width: 576px) {
-  .navbar-brand-area {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-  }
 
-  .navbar-title {
-    font-size: 24px;
-  }
+    /* MENU */
 
-  .navbar-subtitle {
-    font-size: 13px;
-  }
+    .container-navbar {
+        padding: 8px;
+    }
 
-  .hero-section h1 {
-    font-size: 42px;
-  }
+    .navbar {
+        padding: 10px 15px;
+        border-radius: 20px;
+    }
 
-  .hero-section p {
-    font-size: 18px;
-  }
+    .navbar-brand-area {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .navbar-title {
+        font-size: 24px;
+    }
+
+    .navbar-subtitle {
+        margin-top: 0;
+        font-size: 11px;
+    }
+
+    .navbar-toggler {
+        padding: 5px 8px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* HERO*/
+
+    .hero-section {
+        min-height: 100svh;
+        padding: 110px 20px 50px;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section p {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .hero-section .btn-warning {
+        padding: 11px 20px;
+        font-size: 14px;
+    }
+
+
+    /*CARDS */
+
+    .expo-mini-cards {
+        flex-direction: column;
+        align-items: center;
+
+        width: calc(100% - 30px);
+
+        padding: 0;
+        margin: 40px auto 0;
+    }
+
+    .mini-cards {
+        width: 100%;
+        max-width: 330px;
+        margin-bottom: 0;
+    }
+
+    .mini-cards-text {
+        font-size: 13px;
+    }
+
+
+    /* O ESCRITÓRIO */
+
+    .sobre-text-title {
+        font-size: 34px;
+        line-height: 1.15;
+        margin-top: 75px;
+        padding: 0 15px;
+    }
+
+    .sobre-text {
+        font-size: 13px;
+        line-height: 1.6;
+        padding: 0 20px;
+    }
+
+    .grid-o-escritorio {
+        width: calc(100% - 30px);
+        margin: 35px auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .grid-item {
+        grid-column: auto;
+        grid-row: auto;
+
+        width: 100%;
+        height: 360px;
+
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .grid-item-Filosofia {
+        grid-column: auto;
+        grid-row: auto;
+
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .grid-item-outros {
+        width: 100%;
+        height: 200px;
+
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    .grid-item-outros:nth-of-type(3),
+    .grid-item-outros:nth-of-type(4) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .grid-item-title {
+        font-size: 26px;
+    }
+
+    .grid-item-text {
+        font-size: 11px;
+    }
+
+
+    /* ÁREAS DE ATUAÇÃO */
+
+    .atuacao-section {
+        padding: 65px 0;
+    }
+
+    .atuacao-header {
+        width: calc(100% - 30px);
+        margin-bottom: 30px;
+    }
+
+    .atuacao-label {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .atuacao-header h2 {
+        font-size: 35px;
+        line-height: 1.15;
+    }
+
+    .atuacao-header p {
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .atuacao-carrossel {
+        width: calc(100% - 20px);
+        gap: 6px;
+    }
+
+    .atuacao-card {
+        flex: 0 0 100%;
+        height: 290px;
+        padding: 22px 20px;
+        border-radius: 15px;
+    }
+
+    .atuacao-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 20px;
+    }
+
+    .atuacao-card h3 {
+        font-size: 16px;
+    }
+
+    .atuacao-card p {
+        font-size: 11px;
+    }
+
+    .carrossel-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
+    }
+
+    .carrossel-dots {
+        margin-top: 25px;
+    }
+
+
+    /* CONTATO */
+
+    .contato-section {
+        padding: 65px 0;
+    }
+
+    .contato-container {
+        width: calc(100% - 30px);
+        gap: 40px;
+    }
+
+    .contato-info h2 {
+        font-size: 34px;
+        line-height: 1.12;
+    }
+
+    .contato-descricao {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .contato-detalhes {
+        gap: 18px;
+        margin-top: 30px;
+    }
+
+    .contato-item-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contato-item p {
+        font-size: 12px;
+    }
+
+    .contato-form-wrapper {
+        padding: 25px 18px;
+        border-radius: 18px;
+    }
+
+    .form-header {
+        margin-bottom: 25px;
+    }
+
+    .form-header h3 {
+        font-size: 24px;
+    }
+
+    .form-header p {
+        font-size: 11px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-full {
+        grid-column: auto;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .form-group textarea {
+        min-height: 120px;
+    }
+
+    .form-check-custom label {
+        font-size: 9px;
+    }
+
+    .contato-submit {
+        padding: 14px;
+        font-size: 11px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        width: calc(100% - 30px);
+
+        padding: 55px 0 45px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .footer-brand h2 {
+        font-size: 34px;
+    }
+
+    .footer-subtitle {
+        font-size: 12px;
+    }
+
+    .footer-description,
+    .footer-descricao {
+        font-size: 10px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .footer-column a,
+    .footer-column p {
+        font-size: 10px;
+    }
+
+    .footer-bottom-container {
+        width: calc(100% - 30px);
+
+        flex-direction: column;
+        gap: 14px;
+
+        padding: 20px 0;
+
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .voltar-topo {
+        font-size: 9px;
+    }
 }
+
