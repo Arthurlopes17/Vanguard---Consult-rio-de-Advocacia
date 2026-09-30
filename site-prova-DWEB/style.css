@@ -13,28 +13,29 @@ header {
 }
 
 .navbar {
-  border-radius: 20px;
+  border-radius: 40px;
   padding: 15px 25px;
+  background: rgba(240, 248, 255, 0.768) !important;
 }
 
 .navbar-brand-area {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .navbar-title {
   font-family: 'Playfair Display', 'Bodoni Moda', serif;
   color: #0d0229;
   margin: 0;
-  font-size: 32px;
+  font-size: 35px;
 }
 
 .navbar-subtitle {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 17px;
   color: goldenrod;
-  margin: 0;
+  margin-top: 27px;
 }
 
 .navbar-nav {
@@ -55,7 +56,7 @@ header {
   background-color: #0f0035;
   border-color: #0f0035;
   color: white;
-  border-radius: 8px;
+  border-radius: 20px;
   padding: 10px 18px;
 }
 
@@ -82,6 +83,11 @@ header {
   align-items: center;
   justify-content: center;
 }
+/*
+.hero-section .logo {
+  width: min(580px, 70vw);
+  height: auto;
+}*/
 
 .hero-section h1 {
   font-family: 'Playfair Display', 'Bodoni Moda', serif;
